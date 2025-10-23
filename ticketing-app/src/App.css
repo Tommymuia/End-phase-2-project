@@ -6,7 +6,7 @@
 
 :root {
   --primary-color: #007bff;
-  --secondary-color: #111827; /* UPDATED: Dark text/header color */
+  --secondary-color: #111827;
   --background-color: #f0f3f5;
   --max-width: 1200px;
 }
@@ -14,8 +14,17 @@
 body {
   font-family: Arial, sans-serif;
   color: var(--secondary-color);
-  background-color: var(--background-color);
   line-height: 1.5;
+  
+
+  background-image: url('/home/user/Documents/Moringa-projects/React/End-phase-2-project/ticketing-app/public/background.jpg'); 
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  background-blend-mode: overlay; 
 }
 
 h1, h2, h3 {

@@ -3,7 +3,7 @@
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: rgb(87, 85, 85);
+    background-color: #1c1917;
     transition: transform 0.2s, box-shadow 0.2s;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,8 @@
 .event-card h3 {
     font-size: 1.5em;
     margin-bottom: 0.5rem;
-    color: var(--secondary-color, #f8f7f7);
+    /* Changed to white for maximum contrast */
+    color: #fcfcfc;
 }
 
 .event-details p {

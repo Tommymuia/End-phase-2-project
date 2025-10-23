@@ -40,7 +40,7 @@ function ExploreEvents() {
   return (
     <section className="events-section">
       
-      {/* 🎯 NEW WRAPPER FOR TITLE AND FILTERS */}
+      {/*  NEW WRAPPER FOR TITLE AND FILTERS */}
       <div className="header-filter-bar">
         <h1 className="events-title">Current Events</h1>
         
