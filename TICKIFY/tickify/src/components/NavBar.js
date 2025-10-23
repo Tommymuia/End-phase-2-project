@@ -1,5 +1,5 @@
 import React,{useState} from "react"
-
+import EventList from "./EventList"
 function NavBar(){
     const [view , setView] = useState("home")
 // we used states to be able to change dynamically change the values of the states
@@ -16,10 +16,9 @@ function NavBar(){
         <button onClick={() => HandleView("events")}>EventBar</button>
         <button onClick={() => HandleView("cart")}>Go To Cart</button>
         
-    {view === "home" && <ShowHome /> }
-    {view === "events" && <ShowEvents />}
-    {view === "cart" && <ShowCart />}
+    {view === "events" && <EventList/>}
     </div>
     )
 
 }
+export default NavBar
