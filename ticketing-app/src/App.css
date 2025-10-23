@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #111827; /* UPDATED: Dark text/header color */
+  --background-color: #f0f3f5;
+  --max-width: 1200px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--secondary-color);
+  background-color: var(--background-color);
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  color: var(--secondary-color);
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+.main-content {
+  flex-grow: 1; 
+  padding: 20px 0; 
+}
+
+.container {
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
