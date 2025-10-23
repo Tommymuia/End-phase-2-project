@@ -2,10 +2,7 @@ import React, { useEffect, useState } from "react";
 import EventCard from "./EventCard";
 import EventDetails from "./EventDetails";
 
-// This component handles
-// - Fetching event data from db.json
-// - Displaying all event cards
-// - Showing one selected event in detail when clicked by calling the EventCard COMPONENT
+
 function EventList() {
   // We use state to keep track of our list of events
     // "eventsVar" holds the fetched list, setEvent is our setter function 
