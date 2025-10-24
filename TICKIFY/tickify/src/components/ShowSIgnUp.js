@@ -1,6 +1,6 @@
-import React, {useState , useEffect} from "react";
+import React, {useState} from "react";
 
-function SignUp ({addUser}) {
+function SignUp ({addUser}) { 
     // const [formData , setFormData] = useState({
     //     name : "",
     //     email : ""
@@ -20,7 +20,7 @@ function SignUp ({addUser}) {
             method : 'POST' , 
             headers : {"Content-Type"  : "application/json"},
             body : JSON.stringify(newUser), 
-             })//remeber that post equests always give a response when posted 
+             })//remeber that post equests always give a response whean posted 
              .then((res)=>res.json())
              .then((data)=>{
                 console.log("the response given by server" , data)
@@ -33,7 +33,9 @@ function SignUp ({addUser}) {
              .catch((err)=>{console.error("error caught" , err)})
     }
     
-//note that when we are creating the button we need to submit the content give
+//note that when we are creating the button we need to submit the content given
+// so we need to first store the input given by the user in the signup place before even submitting so the state can be changed completely so
+//on the input we make sure that we are updated with every key the user types in we make sure that state changes with that same value ...... this is to ensure that we have the correct details
   return (
     <div className="signup-container">
       <h2>Sign Up</h2>
@@ -63,5 +65,5 @@ function SignUp ({addUser}) {
         <button type="submit">Create Account</button>
       </form>
     </div>
-  );
+  )
 }
