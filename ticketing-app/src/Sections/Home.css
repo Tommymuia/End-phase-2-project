@@ -1,0 +1,37 @@
+.home-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0b0b0b;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.explore-btn {
+  background-color: #e11e45;
+  color: #1e1e1e;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #e11e45;
+  transform: translateY(-3px);
+}

@@ -1,0 +1,74 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e1e;
+  color: white;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e11e45;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #e11e45;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.login-btn, .signup-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-btn {
+  background: transparent;
+  border: 1px solid #e11e45;
+  color: #fcfdfd;
+}
+
+.login-btn:hover {
+  background: #e11e45;
+  color: #111827;
+}
+
+.signup-btn {
+  background: #e11e45;
+  color: #111827;
+}
+
+.signup-btn:hover {
+  background: #e11e45;
+}
+
+.cart-btn {
+  font-size: 1.3rem;
+  color: #e11e45;
+  text-decoration: none;
+}

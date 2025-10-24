@@ -1,5 +1,5 @@
 .event-card {
-    border: 1px solid #e0e0e0;
+    border: 1px solid #444444;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -27,7 +27,6 @@
 .event-card h3 {
     font-size: 1.5em;
     margin-bottom: 0.5rem;
-    /* Changed to white for maximum contrast */
     color: #fcfcfc;
 }
 
