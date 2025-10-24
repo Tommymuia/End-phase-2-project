@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 import EventCard from "../Components/EventCard";
-import BuyTicketModal from "../Components/BuyTicketModal"; 
+import BuyTicketModal from "../Components/BuyTicketModal";
 import "./ExploreEvents.css";
 
 function ExploreEvents() {
   const [events, setEvents] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [selectedEvent, setSelectedEvent] = useState(null); 
+  const [selectedEvent, setSelectedEvent] = useState(null);
   const API_URL = "http://localhost:3001/events";
+  const CART_URL = "http://localhost:3001/cart";
 
   useEffect(() => {
     fetch(API_URL)
@@ -21,26 +22,45 @@ function ExploreEvents() {
   }, []);
 
   const handleBuyTicket = (event) => {
-    setSelectedEvent(event); 
+    setSelectedEvent(event);
   };
 
   const closeModal = () => {
-    setSelectedEvent(null); 
+    setSelectedEvent(null);
   };
 
-  const categories = [
-    "All",
-    ...new Set(events.map((event) => event.category)),
-  ].sort();
+  const handleConfirmPurchase = (formData) => {
+    const ticketData = {
+      ...formData,
+      eventId: selectedEvent.id,
+      title: selectedEvent.title,
+      date: selectedEvent.date,
+      location: selectedEvent.location,
+      image: selectedEvent.image,
+      price: selectedEvent.price,
+    };
+
+    fetch(CART_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(ticketData),
+    })
+      .then((res) => res.json())
+      .then(() => {
+        alert("Ticket successfully added to cart!");
+        closeModal();
+      })
+      .catch((err) => console.error("Error adding ticket to cart:", err));
+  };
+
+  const categories = ["All", ...new Set(events.map((event) => event.category))].sort();
 
   const filteredEvents = events.filter((event) => {
     const matchesSearch =
       event.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       event.location.toLowerCase().includes(searchTerm.toLowerCase());
-
     const matchesCategory =
       selectedCategory === "All" || event.category === selectedCategory;
-
     return matchesSearch && matchesCategory;
   });
 
@@ -80,21 +100,22 @@ function ExploreEvents() {
             <EventCard
               key={event.id}
               event={event}
-              onBuyTicket={() => handleBuyTicket(event)} 
+              onBuyTicket={() => handleBuyTicket(event)}
             />
           ))}
         </div>
       )}
 
       {events.length > 0 && filteredEvents.length === 0 && (
-        <p className="events-loading">
-          No events found matching your criteria.
-        </p>
+        <p className="events-loading">No events found matching your criteria.</p>
       )}
 
-      
       {selectedEvent && (
-        <BuyTicketModal event={selectedEvent} onClose={closeModal} />
+        <BuyTicketModal
+          event={selectedEvent}
+          onClose={closeModal}
+          onConfirm={handleConfirmPurchase}
+        />
       )}
     </section>
   );

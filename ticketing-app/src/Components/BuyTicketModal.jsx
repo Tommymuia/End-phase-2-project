@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./BuyTicketModal.css";
 
-const BuyTicketModal = ({ event, onClose }) => {
+function BuyTicketModal({ event, onClose, onConfirm }) {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -15,76 +15,63 @@ const BuyTicketModal = ({ event, onClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    const newOrder = {
-      eventId: event.id,
-      eventTitle: event.title,
-      firstName: formData.firstName,
-      lastName: formData.lastName,
-      tickets: parseInt(formData.tickets),
-      totalPrice: event.price * formData.tickets,
-    };
-
-    fetch("http://localhost:3001/cart", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(newOrder),
-    })
-      .then((res) => res.json())
-      .then(() => {
-        alert("Ticket added to cart successfully!");
-        onClose();
-      })
-      .catch((err) => console.error("Error adding to cart:", err));
+    onConfirm(formData);
   };
 
   return (
     <div className="modal-overlay">
-      <div className="modal-content">
-        <h2 className="modal-title">Buy Ticket: {event.title}</h2>
+      <div className="modal-container">
+        <button className="close-button" onClick={onClose}>
+          ✕
+        </button>
+        <h2 className="modal-title">Buy Ticket</h2>
+        <p className="modal-event-name">{event.title}</p>
+        <p className="modal-event-details">
+          {event.date} — {event.location}
+        </p>
 
-        <form onSubmit={handleSubmit} className="modal-form">
-          <input
-            name="firstName"
-            value={formData.firstName}
-            onChange={handleChange}
-            placeholder="First Name"
-            className="modal-input"
-            required
-          />
-          <input
-            name="lastName"
-            value={formData.lastName}
-            onChange={handleChange}
-            placeholder="Last Name"
-            className="modal-input"
-            required
-          />
-          <input
-            type="number"
-            name="tickets"
-            min="1"
-            value={formData.tickets}
-            onChange={handleChange}
-            className="modal-input"
-            required
-          />
-          <p className="modal-total">
-            Total: <span>USD {event.price * formData.tickets}</span>
-          </p>
+        <form className="modal-form" onSubmit={handleSubmit}>
+          <label>
+            First Name:
+            <input
+              type="text"
+              name="firstName"
+              value={formData.firstName}
+              onChange={handleChange}
+              required
+            />
+          </label>
 
-          <div className="modal-buttons">
-            <button type="submit" className="confirm-btn">
-              Confirm Purchase
-            </button>
-            <button type="button" onClick={onClose} className="cancel-btn">
-              Cancel
-            </button>
-          </div>
+          <label>
+            Last Name:
+            <input
+              type="text"
+              name="lastName"
+              value={formData.lastName}
+              onChange={handleChange}
+              required
+            />
+          </label>
+
+          <label>
+            Number of Tickets:
+            <input
+              type="number"
+              name="tickets"
+              min="1"
+              value={formData.tickets}
+              onChange={handleChange}
+              required
+            />
+          </label>
+
+          <button type="submit" className="confirm-button">
+            Confirm Purchase
+          </button>
         </form>
       </div>
     </div>
   );
-};
+}
 
 export default BuyTicketModal;
