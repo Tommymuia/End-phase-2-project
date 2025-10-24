@@ -1,74 +1,62 @@
 import React, { useState } from "react";
 import "./BuyTicketModal.css";
 
-function BuyTicketModal({ event, onClose, onConfirm }) {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    tickets: 1,
-  });
+function BuyTicketModal({ event, onClose }) {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [ticketCount, setTicketCount] = useState(1);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
+  const handlePurchase = () => {
+    const newTicket = {
+      eventId: event.id,
+      title: event.title,
+      firstName,
+      lastName,
+      ticketCount,
+      totalPrice: ticketCount * event.price,
+    };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    onConfirm(formData);
+    fetch("http://localhost:3001/cart", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(newTicket),
+    })
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to add to cart");
+        alert("Ticket added to cart!");
+        onClose();
+      })
+      .catch((err) => console.error(err));
   };
 
   return (
     <div className="modal-overlay">
       <div className="modal-container">
-        <button className="close-button" onClick={onClose}>
-          ✕
-        </button>
-        <h2 className="modal-title">Buy Ticket</h2>
-        <p className="modal-event-name">{event.title}</p>
-        <p className="modal-event-details">
-          {event.date} — {event.location}
-        </p>
-
-        <form className="modal-form" onSubmit={handleSubmit}>
-          <label>
-            First Name:
-            <input
-              type="text"
-              name="firstName"
-              value={formData.firstName}
-              onChange={handleChange}
-              required
-            />
-          </label>
-
-          <label>
-            Last Name:
-            <input
-              type="text"
-              name="lastName"
-              value={formData.lastName}
-              onChange={handleChange}
-              required
-            />
-          </label>
-
-          <label>
-            Number of Tickets:
-            <input
-              type="number"
-              name="tickets"
-              min="1"
-              value={formData.tickets}
-              onChange={handleChange}
-              required
-            />
-          </label>
-
-          <button type="submit" className="confirm-button">
-            Confirm Purchase
-          </button>
-        </form>
+        <h2>Buy Ticket - {event.title}</h2>
+        <label>First Name:</label>
+        <input
+          type="text"
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
+        />
+        <label>Last Name:</label>
+        <input
+          type="text"
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
+        />
+        <label>Number of Tickets:</label>
+        <input
+          type="number"
+          min="1"
+          value={ticketCount}
+          onChange={(e) => setTicketCount(Number(e.target.value))}
+        />
+        <p>Total: USD {ticketCount * event.price}</p>
+        <div className="modal-actions">
+          <button onClick={handlePurchase}>Confirm</button>
+          <button onClick={onClose}>Cancel</button>
+        </div>
       </div>
     </div>
   );

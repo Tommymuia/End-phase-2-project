@@ -2,40 +2,91 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: "Poppins", sans-serif;
-}
-
-body, html, #root {
-  height: 100%;
+  background-color: #141414;
+  color: #ffffff;
+  overflow-x: hidden;
   width: 100%;
-  background-color: #0b0b0b;
-  color: #fff;
-  scroll-behavior: smooth;
-}
-
-.app-container {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
 }
 
-.home-page {
-  height: 100vh;
+.no-scroll {
   overflow: hidden;
 }
 
-.scrollable-page {
+.App {
+  text-align: center;
+  width: 100%;
   min-height: 100vh;
-  overflow-y: auto;
 }
 
-.page-wrapper {
-  padding-top: 80px;
-  transition: all 0.3s ease;
-}
-
-.center {
+section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 1.5rem;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+.home-section {
+  background: linear-gradient(to right, #111827, #1e1d1d);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.home-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.home-section p {
+  font-size: 1.2rem;
+  color: #d1d5db;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.explore-btn {
+  background-color: #ff2750;
+  color: #111827;
+  font-weight: 600;
+  padding: 0.8rem 1.8rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.explore-btn:hover {
+  background-color: #e11e45;
+  transform: scale(1.05);
+}
+
+main,
+.main-content {
+  margin-top: 70px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .home-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-section p {
+    font-size: 1rem;
+  }
+
+  .explore-btn {
+    padding: 0.6rem 1.5rem;
+  }
 }

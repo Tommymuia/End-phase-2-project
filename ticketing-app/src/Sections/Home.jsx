@@ -13,7 +13,7 @@ function Home() {
     <section id="home" className="home-section">
       <div className="home-content">
         <h1>Welcome to Tickify</h1>
-        <p>Book, manage, and explore your favorite events with ease and confidence.</p>
+        <p>Book, manage and explore your favorite events with ease and confidence.</p>
         <a href="/events" className="explore-btn">Explore Events</a>
       </div>
     </section>

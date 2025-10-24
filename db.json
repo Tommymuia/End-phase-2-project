@@ -1,7 +1,7 @@
 {
   "events": [
     {
-      "id": 1,
+      "id": "1",
       "title": "AfroBeats Music Festival",
       "date": "2025-11-20",
       "location": "Nairobi, Kenya",
@@ -11,7 +11,7 @@
       "description": "A high-energy celebration of Africa’s top Afrobeats artists and DJs."
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Tech Innovators Summit",
       "date": "2025-11-25",
       "location": "Kigali, Rwanda",
@@ -21,7 +21,7 @@
       "description": "A gathering of Africa’s brightest minds in technology and innovation."
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Stand-Up Comedy Jam",
       "date": "2025-12-01",
       "location": "Lagos, Nigeria",
@@ -31,7 +31,7 @@
       "description": "Laugh your heart out with Africa’s funniest comedians live on stage."
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Startup Pitch Battle",
       "date": "2025-12-10",
       "location": "Accra, Ghana",
@@ -41,7 +41,7 @@
       "description": "Watch emerging startups pitch their groundbreaking ideas to investors."
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Art & Fashion Week",
       "date": "2025-12-15",
       "location": "Cape Town, South Africa",
@@ -51,7 +51,7 @@
       "description": "A fusion of art, culture, and fashion showcasing Africa’s best creatives."
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Food & Culture Expo",
       "date": "2025-11-28",
       "location": "Mombasa, Kenya",
@@ -61,7 +61,7 @@
       "description": "Taste the flavors of Africa with chefs from across the continent."
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Serengeti Marathon",
       "date": "2025-12-05",
       "location": "Arusha, Tanzania",
@@ -71,7 +71,7 @@
       "description": "Run alongside the beautiful wildlife of Serengeti National Park."
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Nairobi Film Fest",
       "date": "2025-11-18",
       "location": "Nairobi, Kenya",
@@ -81,7 +81,7 @@
       "description": "Experience the magic of African cinema with screenings and panels."
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Lusaka Jazz Nights",
       "date": "2025-12-08",
       "location": "Lusaka, Zambia",
@@ -91,7 +91,7 @@
       "description": "Smooth jazz performances in a classy, intimate setting."
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Women in Tech Conference",
       "date": "2025-12-20",
       "location": "Kampala, Uganda",
@@ -101,7 +101,7 @@
       "description": "Empowering women developers, engineers, and entrepreneurs in Africa."
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Beach Party Bash",
       "date": "2025-12-30",
       "location": "Diani, Kenya",
@@ -111,7 +111,7 @@
       "description": "Dance all night to top DJs by the ocean waves."
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "African Literature Expo",
       "date": "2025-11-26",
       "location": "Addis Ababa, Ethiopia",
@@ -121,7 +121,7 @@
       "description": "Meet your favorite African authors and discover new literary voices."
     },
     {
-      "id": 13,
+      "id": "13",
       "title": "Gaming Africa Con",
       "date": "2025-11-30",
       "location": "Lagos, Nigeria",
@@ -131,7 +131,7 @@
       "description": "A celebration of gaming, esports, and game development in Africa."
     },
     {
-      "id": 14,
+      "id": "14",
       "title": "Mountain Biking Challenge",
       "date": "2025-12-18",
       "location": "Kigali, Rwanda",
@@ -141,7 +141,7 @@
       "description": "Conquer rugged terrain and scenic trails in Rwanda’s mountains."
     },
     {
-      "id": 15,
+      "id": "15",
       "title": "Street Food Fiesta",
       "date": "2025-11-22",
       "location": "Dar es Salaam, Tanzania",
@@ -151,7 +151,7 @@
       "description": "A vibrant celebration of Africa’s best street food and drinks."
     },
     {
-      "id": 16,
+      "id": "16",
       "title": "Fashion Forward Africa",
       "date": "2025-12-03",
       "location": "Johannesburg, South Africa",
@@ -161,7 +161,7 @@
       "description": "Runway shows featuring top African fashion designers."
     },
     {
-      "id": 17,
+      "id": "17",
       "title": "Film & Animation Expo",
       "date": "2025-11-27",
       "location": "Nairobi, Kenya",
@@ -171,7 +171,7 @@
       "description": "Showcasing the rise of African animation and film production."
     },
     {
-      "id": 18,
+      "id": "18",
       "title": "Yoga in the Park",
       "date": "2025-12-09",
       "location": "Addis Ababa, Ethiopia",
@@ -181,7 +181,7 @@
       "description": "Relax, breathe, and stretch under the open skies."
     },
     {
-      "id": 19,
+      "id": "19",
       "title": "Startup Bootcamp Africa",
       "date": "2025-12-04",
       "location": "Nairobi, Kenya",
@@ -191,7 +191,7 @@
       "description": "An intensive bootcamp for young entrepreneurs and startups."
     },
     {
-      "id": 20,
+      "id": "20",
       "title": "Comic & Cosplay Expo",
       "date": "2025-12-11",
       "location": "Lagos, Nigeria",
@@ -201,7 +201,7 @@
       "description": "Cosplayers, comic artists, and fandoms unite!"
     },
     {
-      "id": 21,
+      "id": "21",
       "title": "Motorsport Grand Prix",
       "date": "2025-11-19",
       "location": "Johannesburg, South Africa",
@@ -211,7 +211,7 @@
       "description": "Experience the thrill of speed at Africa’s biggest racing event."
     },
     {
-      "id": 22,
+      "id": "22",
       "title": "African Startup Awards",
       "date": "2025-12-02",
       "location": "Cairo, Egypt",
@@ -221,7 +221,7 @@
       "description": "Celebrating innovation and entrepreneurship across the continent."
     },
     {
-      "id": 23,
+      "id": "23",
       "title": "AfroHouse Beach Party",
       "date": "2025-12-24",
       "location": "Zanzibar, Tanzania",
@@ -231,7 +231,7 @@
       "description": "House music, cocktails, and sunsets on the beach."
     },
     {
-      "id": 24,
+      "id": "24",
       "title": "Film Directors Workshop",
       "date": "2025-11-23",
       "location": "Lusaka, Zambia",
@@ -241,7 +241,7 @@
       "description": "Hands-on filmmaking workshop led by award-winning directors."
     },
     {
-      "id": 25,
+      "id": "25",
       "title": "Comedy Under the Stars",
       "date": "2025-12-14",
       "location": "Nakuru, Kenya",
@@ -251,7 +251,7 @@
       "description": "Outdoor comedy show with laughter and starlight."
     },
     {
-      "id": 26,
+      "id": "26",
       "title": "AI & Robotics Conference",
       "date": "2025-12-16",
       "location": "Cairo, Egypt",
@@ -261,7 +261,7 @@
       "description": "The future of robotics and artificial intelligence in Africa."
     },
     {
-      "id": 27,
+      "id": "27",
       "title": "Marathon for Charity",
       "date": "2025-11-21",
       "location": "Addis Ababa, Ethiopia",
@@ -271,7 +271,7 @@
       "description": "Run for a cause — supporting education and healthcare initiatives."
     },
     {
-      "id": 28,
+      "id": "28",
       "title": "Food Truck Carnival",
       "date": "2025-12-19",
       "location": "Nairobi, Kenya",
@@ -281,7 +281,7 @@
       "description": "Food trucks, music, and family fun all day long."
     },
     {
-      "id": 29,
+      "id": "29",
       "title": "Dance Africa Showcase",
       "date": "2025-12-07",
       "location": "Lusaka, Zambia",
@@ -291,7 +291,7 @@
       "description": "A vibrant display of Africa’s traditional and modern dance styles."
     },
     {
-      "id": 30,
+      "id": "30",
       "title": "Music Producers Camp",
       "date": "2025-12-13",
       "location": "Kampala, Uganda",
@@ -299,6 +299,176 @@
       "price": 1900,
       "image": "https://images.unsplash.com/photo-1497032205916-ac775f0649ae",
       "description": "Collaborate with top producers and artists to make the next hit track."
+    }
+  ],
+  "users": [
+    {
+      "id": "848d",
+      "firstName": "Thomas",
+      "lastName": "Muia",
+      "email": "muiathomas.mt@gmail.com",
+      "password": "ggsgb"
+    },
+    {
+      "id": "1834",
+      "firstName": "Thomas",
+      "lastName": "Muia",
+      "email": "muiathomas.mt@gmail.com",
+      "password": "rtv"
+    },
+    {
+      "id": "732c",
+      "firstName": "yVONNE",
+      "lastName": "kADENYI",
+      "email": "muiathomas.mt@gmail.com",
+      "password": "ERTY"
+    },
+    {
+      "id": "2e2b",
+      "firstName": "Mark",
+      "lastName": "Joe",
+      "email": "markJoe@gmail.com",
+      "password": "TOM"
+    },
+    {
+      "id": "25d3",
+      "firstName": "Test",
+      "lastName": "User",
+      "email": "est@gmail.com",
+      "password": "tom"
+    }
+  ],
+  "cart": [],
+  "purchases": [
+    {
+      "id": "0af1",
+      "eventId": "1",
+      "title": "AfroBeats Music Festival",
+      "firstName": "FGHJ",
+      "lastName": "SDFGHJ",
+      "ticketCount": 1,
+      "totalPrice": 3500,
+      "customerEmail": "john@example.com"
+    },
+    {
+      "id": "ac68",
+      "eventId": "1",
+      "title": "AfroBeats Music Festival",
+      "firstName": "yVONNE",
+      "lastName": "kADENYI",
+      "ticketCount": 1,
+      "totalPrice": 3500,
+      "customerEmail": "john@example.com"
+    },
+    {
+      "id": "b275",
+      "eventId": "1",
+      "title": "AfroBeats Music Festival",
+      "firstName": "ttf",
+      "lastName": "sdffsdf",
+      "ticketCount": 2,
+      "totalPrice": 7000,
+      "customerEmail": "john@example.com"
+    },
+    {
+      "id": "5f2c",
+      "eventId": "1",
+      "title": "AfroBeats Music Festival",
+      "firstName": "tt",
+      "lastName": "ee",
+      "ticketCount": 1,
+      "totalPrice": 3500,
+      "customerEmail": "john@example.com"
+    },
+    {
+      "id": "b06a",
+      "eventId": "1",
+      "title": "AfroBeats Music Festival",
+      "firstName": "tr",
+      "lastName": "rr",
+      "ticketCount": 1,
+      "totalPrice": 3500,
+      "customerEmail": "john@example.com"
+    },
+    {
+      "id": "93eb",
+      "eventId": "1",
+      "title": "AfroBeats Music Festival",
+      "firstName": "ff",
+      "lastName": "ff",
+      "ticketCount": 1,
+      "totalPrice": 3500,
+      "customerEmail": "john@example.com"
+    },
+    {
+      "id": "59c9",
+      "eventId": "2",
+      "title": "Tech Innovators Summit",
+      "firstName": "t",
+      "lastName": "g",
+      "ticketCount": 1,
+      "totalPrice": 1200,
+      "customerEmail": "john@example.com"
+    },
+    {
+      "id": "478a",
+      "eventId": "2",
+      "title": "Tech Innovators Summit",
+      "firstName": "Mark",
+      "lastName": "Joe",
+      "ticketCount": 1,
+      "totalPrice": 1200,
+      "customerEmail": "john@example.com"
+    },
+    {
+      "id": "0fec",
+      "eventId": "2",
+      "title": "Tech Innovators Summit",
+      "firstName": "Mark",
+      "lastName": "Joe",
+      "ticketCount": 1,
+      "totalPrice": 1200,
+      "customerEmail": "john@example.com"
+    },
+    {
+      "id": "4e51",
+      "eventId": "1",
+      "title": "AfroBeats Music Festival",
+      "firstName": "Test",
+      "lastName": "User",
+      "ticketCount": 1,
+      "totalPrice": 3500,
+      "customerEmail": "john@example.com"
+    },
+    {
+      "id": "b8a6",
+      "eventId": "1",
+      "title": "AfroBeats Music Festival",
+      "firstName": "Test",
+      "lastName": "User",
+      "ticketCount": 1,
+      "totalPrice": 3500,
+      "customerEmail": "john@example.com"
+    },
+    {
+      "id": "d717",
+      "eventId": "1",
+      "title": "AfroBeats Music Festival",
+      "firstName": "ttt",
+      "lastName": "tt",
+      "ticketCount": 1,
+      "totalPrice": 3500,
+      "customerEmail": "john@example.com"
+    },
+    {
+      "id": "b397",
+      "eventId": "1",
+      "title": "AfroBeats Music Festival",
+      "firstName": "tr",
+      "lastName": "ff",
+      "ticketCount": 1,
+      "totalPrice": 3500,
+      "customerEmail": "est@gmail.com"
     }
   ]
 }
