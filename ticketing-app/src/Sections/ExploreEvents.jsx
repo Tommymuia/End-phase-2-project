@@ -1,29 +1,31 @@
 import React, { useEffect, useState } from "react";
 import EventCard from "../Components/EventCard";
+import BuyTicketModal from "../Components/BuyTicketModal"; 
 import "./ExploreEvents.css";
 
 function ExploreEvents() {
   const [events, setEvents] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedEvent, setSelectedEvent] = useState(null); 
   const API_URL = "http://localhost:3001/events";
 
   useEffect(() => {
     fetch(API_URL)
       .then((res) => {
-        if (!res.ok) {
-          throw new Error("Network response was not ok");
-        }
+        if (!res.ok) throw new Error("Network response was not ok");
         return res.json();
       })
-      .then((data) => {
-        setEvents(data);
-      })
+      .then((data) => setEvents(data))
       .catch((error) => console.error("Error fetching events:", error));
   }, []);
 
   const handleBuyTicket = (event) => {
-    alert(`You selected: ${event.title}. Proceeding to checkout!`);
+    setSelectedEvent(event); 
+  };
+
+  const closeModal = () => {
+    setSelectedEvent(null); 
   };
 
   const categories = [
@@ -44,7 +46,6 @@ function ExploreEvents() {
 
   return (
     <section className="events-section" id="events">
-      {/*  NEW WRAPPER FOR TITLE AND FILTERS */}
       <div className="header-filter-bar">
         <h1 className="events-title">Current Events</h1>
 
@@ -79,15 +80,21 @@ function ExploreEvents() {
             <EventCard
               key={event.id}
               event={event}
-              onBuyTicket={handleBuyTicket}
+              onBuyTicket={() => handleBuyTicket(event)} 
             />
           ))}
         </div>
       )}
+
       {events.length > 0 && filteredEvents.length === 0 && (
         <p className="events-loading">
           No events found matching your criteria.
         </p>
+      )}
+
+      
+      {selectedEvent && (
+        <BuyTicketModal event={selectedEvent} onClose={closeModal} />
       )}
     </section>
   );

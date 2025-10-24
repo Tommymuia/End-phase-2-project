@@ -1,0 +1,101 @@
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  color: #ffc107;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffc107;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.list li {
+  margin-bottom: 5px;
+}
+
+.list a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.list a:hover {
+  color: #ffc107;
+}
+
+.communityLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.communityLinks a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.communityLinks a:hover {
+  color: #ffc107;
+}
+
+.appButton {
+  margin-top: 8px;
+  background-color: #ffc107;
+  border: none;
+  padding: 8px 16px;
+  color: #1a1a1a;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.appButton:hover {
+  background-color: #fdd835;
+}
+
+.bottomText {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 30px;
+  color: #bbb;
+}
+
+.copy {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #bbb;
+}
