@@ -30,6 +30,16 @@ function SignUp ({addUser}) {
                 setEmail("");
              })
              //we then want to catch any errors that may come throguh
-             .catch
+             .catch((err)=>{console.error("error caught" , err)})
     }
-}
+    
+return (
+    <div className="sign-up-box">
+        
+
+
+
+    </div>
+
+
+)
