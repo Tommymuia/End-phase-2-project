@@ -8,6 +8,7 @@ function NavBar ({handleView}){
             <button onClick={()=>handleView("home")}>HOME</button>
             <button onClick={()=>handleView("events")}>EVENTS</button>
             <button onClick={()=>handleView("cart")}>CART</button>
+            <button onClick={()=>handleView("sign up")}><span>SIGN UP</span></button>
         </div>
     )
 
