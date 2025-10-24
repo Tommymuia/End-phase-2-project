@@ -33,13 +33,35 @@ function SignUp ({addUser}) {
              .catch((err)=>{console.error("error caught" , err)})
     }
     
-return (
-    <div className="sign-up-box">
-        
+//note that when we are creating the button we need to submit the content give
+  return (
+    <div className="signup-container">
+      <h2>Sign Up</h2>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Name:
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+        </label>
+        <br />
 
+        <label>
+          Email:
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </label>
+        <br />
 
-
+        <button type="submit">Create Account</button>
+      </form>
     </div>
-
-
-)
+  );
+}
