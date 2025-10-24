@@ -1,60 +1,33 @@
-import React, { useEffect, useState } from "react";
-import EventCard from "./EventCard";
-import EventDetails from "./EventDetails";
+import React , {useState , useEffect} from "react"
+
+function EventList (){
+  // we create a state to save the incoming api data (rember state is reacts memory and will rerender according the data given) 
+  const [events , setEvents] = useState([])
+  
+  useEffect(()=>{
+    fetch('http://localhost:3000/events')
+    .then(res => res.json())
+    .then(data => setEvents(data))
+    .catch((err) => console.error("Error getting events:" , err))
+  } , [])
+
+  // useeffeect to bring in the json since it smth run out of the code render (async)
+  //we then save that data in state to cause another rerender to now display the ui if the condtion is met
+  //we use defensive rendering incase of json errors ... this is just condtional rendering only if the state event is change d according to the values passed
+  return (
+    
+    <div className="event-list">
+      {events.length === 0 ? (
+        <p>loading events .... please wait</p>
+      ) : (
+        events.map((event) => (
+          <div key={event.id} className="eventcard">
+        )
+          
+        
+      )}
 
 
-function EventList() {
-  // We use state to keep track of our list of events
-    // "eventsVar" holds the fetched list, setEvent is our setter function 
-      const [eventsVar, setEvent] = useState([]);
-
-        // "selectedEvent" stores the event the user clicks on
-        // remember state is memory of everything that happens in the ui
-          const [selectedEvent, setSelectedEvent] = useState(null);
-
-            // useEffect is used to handle code that runs outside the normal render flow
-                      // If we pass a state variable inside it, the effect will re-run every time that value changes.
-                        useEffect(() => {
-                            fetch("/db.json")
-                                  .then((res) => res.json()) 
-                                        .then((data) => setEvent(data.events)) //remember state is the memory for react so we store our data in th state 
-                                              .catch((err) => console.error("Error fetching events:", err));
-                                                }, []); // empty array = run only once .... this will bring in the json before other renders and will run once
-
-                                                  // Defensive rendering:
-                                                    // Sometimes fetch fails or returns undefined, so we check
-                                                      // that the data is an array before calling map() — prevents crashing.
-                                                        if (!Array.isArray(eventsVar)) {
-                                                            return <p>Loading...</p>;
-                                                              } // this is just to display the page before the json data is met
-
-                                                                // Return section:
-                                                                  // - If no event is selected, we show the list of EventCards
-                                                                    // - If one is selected, we show that event’s details instead
-                                                                      return (
-                                                                                         <div>
-                                                                            
-                                                                                                          {!selectedEvent ? (
-                                                                                                                  <div className="event-list">
-                                                                                                                            {eventsVar.map((event) => (
-                                                                                                                                        // Each card gets the event data + onSelect callback
-                                                                                                                                                    // The arrow function ensures HandleSelected runs only when clicked
-                                                                                                                                                                <EventCard
-                                                                                                                                                                              key={event.id}
-                                                                                                                                                                                            event={event}
-                                                                                                                                                                                                          onSelect={() => setSelectedEvent(event)}
-                                                                                                                                                                                                                      />
-                                                                                                                                                                                                                                ))}
-                                                                                                                                                                                                                                        </div>
-                                                                                                                                                                                                                                              ) : (
-                                                                                                                                                                                                                                                      // When one event is selected → show its details
-                                                                                                                                                                                                                                                              <EventDetails
-                                                                                                                                                                                                                                                                        event={selectedEvent}
-                                                                                                                                                                                                                                                                                  onBack={() => setSelectedEvent(null)} // clicking “Back” clears selection
-                                                                                                                                                                                                                                                                                          />
-                                                                                                                                                                                                                                                                                                )}
-                                                                                                                                                                                                                                                                                                    </div>
-                                                                                                                                                                                                                                                                                                      );
-                                                                                                                                                                                                                                                                                                      }
-
-                                                                                                                                                                                                                                                                                                      export default EventList;
+    </div>
+  )
+}
