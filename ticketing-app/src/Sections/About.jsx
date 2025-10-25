@@ -7,7 +7,7 @@ function About() {
       <div className="about-container">
         <h1>About Tickify</h1>
         <p>
-          Tickify is your ultimate platform for discovering and booking tickets
+          Tickify is your Ultimate platform for discovering and booking tickets
           to exciting events near you. Whether it’s concerts, conferences,
           workshops or local Meetups, Tickify  makes the experience seamless
           and hassle-free.
