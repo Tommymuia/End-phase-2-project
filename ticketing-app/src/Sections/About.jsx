@@ -9,7 +9,7 @@ function About() {
         <p>
           Tickify is your ultimate platform for discovering and booking tickets
           to exciting events near you. Whether it’s concerts, conferences,
-          workshops or local meetups, Tickify organization makes the experience seamless
+          workshops or local meetups, Tickify  makes the experience seamless
           and hassle-free.
         </p>
 
