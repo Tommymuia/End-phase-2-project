@@ -336,6 +336,20 @@
       "lastName": "User",
       "email": "est@gmail.com",
       "password": "tom"
+    },
+    {
+      "id": "8fd5",
+      "firstName": "Sheila",
+      "lastName": "Awuor",
+      "email": "sheila@gmail.com",
+      "password": "Sheila"
+    },
+    {
+      "id": "bcd0",
+      "firstName": "Ronnie",
+      "lastName": "Kiiru",
+      "email": "ronnie@gmail.com",
+      "password": "ronnie"
     }
   ],
   "cart": [],
@@ -469,6 +483,26 @@
       "ticketCount": 1,
       "totalPrice": 3500,
       "customerEmail": "est@gmail.com"
+    },
+    {
+      "id": "127a",
+      "eventId": "6",
+      "title": "Food & Culture Expo",
+      "firstName": "Sheila",
+      "lastName": "Awuor",
+      "ticketCount": 3,
+      "totalPrice": 3000,
+      "customerEmail": "sheila@gmail.com"
+    },
+    {
+      "id": "48c2",
+      "eventId": "1",
+      "title": "AfroBeats Music Festival",
+      "firstName": "Ronnie",
+      "lastName": "Kiiru",
+      "ticketCount": 1,
+      "totalPrice": 3500,
+      "customerEmail": "ronnie@gmail.com"
     }
   ]
 }

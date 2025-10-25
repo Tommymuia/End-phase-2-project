@@ -49,7 +49,7 @@ function MyTickets({ customerEmail }) {
               <p>
                 {ticket.ticketCount} ticket(s) for {ticket.firstName} {ticket.lastName}
               </p>
-              <p>Total: KES {ticket.totalPrice}</p>
+              <p>Total: USD {ticket.totalPrice}</p>
             </li>
           ))}
         </ul>

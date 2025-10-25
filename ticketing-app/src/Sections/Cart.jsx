@@ -73,7 +73,7 @@ function Cart({ loggedInUser }) {
                   {item.ticketCount} ticket(s) for {item.firstName}{" "}
                   {item.lastName}
                 </p>
-                <p>Total: KES {item.totalPrice}</p>
+                <p>Total: USD {item.totalPrice}</p>
                 <button
                   className="remove-btn"
                   onClick={() => handleRemove(item.id)}
