@@ -16,7 +16,7 @@ function About() {
         <div className="about-features">
           <div className="feature-card">
             <h3>Discover Events</h3>
-            <p>Browse a wide range of events Happening around you.</p>
+            <p>Browse a wide range of events happening around you.</p>
           </div>
           <div className="feature-card">
             <h3>Easy Booking</h3>
