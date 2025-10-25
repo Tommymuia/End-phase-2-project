@@ -24,7 +24,7 @@ function About() {
           </div>
           <div className="feature-card">
             <h3>My Tickets</h3>
-            <p>Keep track of all your purchased tickets in one place.</p>
+            <p>Keep track of all your Purchased tickets in one place.</p>
           </div>
           <div className="feature-card">
             <h3>Secure Payments</h3>
