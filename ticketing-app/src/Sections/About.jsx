@@ -20,7 +20,7 @@ function About() {
           </div>
           <div className="feature-card">
             <h3>Easy Booking</h3>
-            <p>Purchase tickets quickly and securely with just a few clicks.</p>
+            <p>PurChase tickets quickly and securely with just a few clicks.</p>
           </div>
           <div className="feature-card">
             <h3>My Tickets</h3>
