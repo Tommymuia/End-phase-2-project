@@ -21,8 +21,12 @@ function App (){
 
     function addToCart(event){
       setCart ([...cart , event]) //nataka tu select the event chosen 
+      // it first takes the contents from cart before using the spread operator then it adds the mew event to that array(event) 
+      //this then will update our cart
     }
-    functi
+    function removeFromCart(event.id){
+      setCart(cart.filter((item)=>item.id !== eventId))
+    }
     function addUser(newUser){
         setUsers([...users , newUser])
         console.log("added user :" , newUser)

@@ -26,7 +26,7 @@ return (
           <p>{event.date}</p>
           <p>{event.location}</p>
           <p>Ksh {event.price}</p>
-          <button>Buy Ticket</button>
+          <button onClick={()=> addToCart(event)}>ADD TO CART</button>
         </div>
       ))
     )}
