@@ -5,7 +5,7 @@ function EventList (){
   const [events , setEvents] = useState([])
   
   useEffect(()=>{
-    fetch('http://localhost:3000/events')
+    fetch('http://localhost:3001/events')
     .then(res => res.json())
     .then(data => setEvents(data))
     .catch((err) => console.error("Error getting events:" , err))

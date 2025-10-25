@@ -16,7 +16,7 @@ function SignUp ({addUser}) {
         const newUser = {name , email}
         //we create this variable to store the states and the data in them 
 
-        fetch("http://localhost:3000/users" , {
+        fetch("http://localhost:3001/users" , {
             method : 'POST' , 
             headers : {"Content-Type"  : "application/json"},
             body : JSON.stringify(newUser), 

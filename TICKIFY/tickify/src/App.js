@@ -8,7 +8,8 @@ import ShowSignUp from "./components/ShowSignUp"
 function App (){
     const [view , setView] = useState("home")
     const [users , setUsers] = useState([])
-    // our setter function to set thhe view that will be rendered according to the butto pressed
+    const [cart , setCart] = useState([])
+     // our setter function to set thhe view that will be rendered according to the butto pressed
     //view is the state memory
 
     function HandleView (selectedView){
@@ -17,6 +18,11 @@ function App (){
         //its give it as a prop to our child which then runs the function according to the button pressed
         //this changes the selected view  which our setter now gives the function
     }
+
+    function addToCart(event){
+      setCart ([...cart , event]) //nataka tu select the event chosen 
+    }
+    functi
     function addUser(newUser){
         setUsers([...users , newUser])
         console.log("added user :" , newUser)
@@ -24,10 +30,10 @@ function App (){
     return (
         <div>
             <NavBar handleView={HandleView}/>
-
-        {view ==="events"  && <EventList/>}
+        {view ==="events"  && <EventList addToCart = {addToCart}/>}
         {view === "home" && <Home/>}
         {view === "sign up" && <ShowSignUp addUser = {addUser}/>}
+        {view === "cart" && <ShowCart cart={cart} removeFromCart ={removeFromCart}/>}
 
         </div>
     )
