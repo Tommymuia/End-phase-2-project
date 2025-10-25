@@ -19,7 +19,7 @@ function About() {
             <p>Browse a wide range of events happening around you.</p>
           </div>
           <div className="feature-card">
-            <h3>Easy Booking</h3>
+            <h3>Easy booking</h3>
             <p>Purchase tickets quickly and securely with just a few clicks.</p>
           </div>
           <div className="feature-card">
