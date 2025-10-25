@@ -49,14 +49,14 @@ function Cart({ loggedInUser }) {
         });
       }
 
-      alert("Checkout successful! Your tickets are now in My Tickets.");
+      alert("Checkout successful!!! Your tickets are now in My Tickets.");
       fetchCartItems();
     } catch (err) {
       console.error("Checkout failed:", err);
     }
   };
 
-  if (loading) return <p>Loading cart...</p>;
+  if (loading) return <p>Loading cart.....</p>;
 
   return (
     <div className="cart-container">
