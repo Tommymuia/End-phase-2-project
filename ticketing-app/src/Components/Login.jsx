@@ -52,4 +52,3 @@ function Login({ setLoggedInUser }) {
   );
 }
 
-export default Login;
