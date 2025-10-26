@@ -30,4 +30,3 @@ const EventCard = ({ event, onBuyTicket }) => {
   );
 };
 
-export default EventCard;
