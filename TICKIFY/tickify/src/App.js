@@ -31,6 +31,7 @@ function App (){
         setUsers([...users , newUser])
         console.log("added user :" , newUser)
     }
+    const total = cart.reduce ((acc , item)=> acc +item.price , 0 ) //
     return (
         <div>
             <NavBar handleView={HandleView}/>
@@ -38,9 +39,8 @@ function App (){
         {view === "home" && <Home/>}
         {view === "sign up" && <ShowSignUp addUser = {addUser}/>}
         {view === "cart" && <ShowCart cart={cart} removeFromCart ={removeFromCart}/>}
-
         </div>
     )
 }
-export default App
+export default App;e
 // ensure that the states that you save in app are the ones that are not temporary or that should stick to the website eg the sign up details of a buyer
