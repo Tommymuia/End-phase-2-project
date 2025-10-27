@@ -1,44 +1,47 @@
 .home-section {
-  background: linear-gradient(to right, #0f172a, #1e1d1d);
+  position: relative;
   height: 100vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   overflow: hidden;
 }
+
 
 .carousel-container {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 1200px;
-  margin-bottom: 2rem;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  height: 100%;
+  z-index: 1;
 }
 
-.home-swiper {
+.carousel-container img {
   width: 100%;
-  height: 450px;
-}
-
-.slide-content {
-  position: relative;
-}
-
-.carousel-image {
-  width: 100%;
-  height: 450px;
+  height: 100%;
   object-fit: cover;
 }
 
-.home-content {
-  color: white;
-  max-width: 600px;
-  padding: 2rem;
+
+.carousel-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
   z-index: 2;
+}
+
+
+.home-content {
+  position: relative;
+  z-index: 3;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2rem;
 }
 
 .home-content h1 {
@@ -69,31 +72,7 @@
   transform: scale(1.05);
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: #ffffff !important;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-}
-
-.swiper-pagination-bullet {
-  background: #ffffff !important;
-  opacity: 0.6;
-}
-
-.swiper-pagination-bullet-active {
-  background: #ff2750 !important;
-  opacity: 1;
-}
-
 @media (max-width: 768px) {
-  .home-swiper {
-    height: 250px;
-  }
-
-  .carousel-image {
-    height: 250px;
-  }
-
   .home-content h1 {
     font-size: 2.2rem;
   }
@@ -104,27 +83,5 @@
 
   .explore-btn {
     padding: 0.6rem 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .home-swiper {
-    height: 200px;
-  }
-
-  .carousel-image {
-    height: 200px;
-  }
-
-  .home-content {
-    padding: 1rem;
-  }
-
-  .home-content h1 {
-    font-size: 1.8rem;
-  }
-
-  .home-content p {
-    font-size: 0.9rem;
   }
 }
