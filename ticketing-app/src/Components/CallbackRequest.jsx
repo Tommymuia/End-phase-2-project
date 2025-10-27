@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./CallbackRequest.css";
 
 function CallbackRequest() {
   const [formData, setFormData] = useState({
@@ -8,11 +9,13 @@ function CallbackRequest() {
   });
   const [showPopUp, setShowPopUp] = useState(false);
 
-  // show popup after 30 seconds
+  //show popuup after 30 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
+      console.log("Showing popup after 30s...");
       setShowPopUp(true);
-    }, 30000);
+    }, 30000); 
+
     return () => clearTimeout(timer);
   }, []);
 
@@ -25,7 +28,7 @@ function CallbackRequest() {
     e.preventDefault();
 
     try {
-      await fetch("http://localhost:3001/callbackRequests", {
+      await fetch("http://localhost:3001/callbackRequest", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -37,12 +40,15 @@ function CallbackRequest() {
     }
   };
 
+
   if (!showPopUp) return null;
 
   return (
-    <div className="pop-up-overlay">
-      <div className="pop-up-container">
-        <button className="close-btn" onClick={() => setShowPopUp(false)}>×</button>
+    <div className="popup-overlay">
+      <div className="popup-container">
+        <button className="close-btn" onClick={() => setShowPopUp(false)}>
+          ✖
+        </button>
         <h2>Request a Callback</h2>
         <form onSubmit={handleSubmit}>
           <input

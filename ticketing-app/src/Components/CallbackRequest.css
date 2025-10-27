@@ -1,0 +1,99 @@
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px; 
+  z-index: 9999;
+}
+
+
+.popup-container {
+  position: relative;
+  background: #ffffff;
+  color: #333;
+  width: 360px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  padding: 25px 20px;
+  text-align: center;
+  animation: slideDown 0.4s ease-in-out;
+}
+
+
+.popup-container h2 {
+  margin-bottom: 15px;
+  color: #111;
+  font-size: 1.4rem;
+}
+
+
+.popup-container input,
+.popup-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.popup-container input:focus,
+.popup-container textarea:focus {
+  border-color: #ff2750;
+}
+
+
+.popup-container button[type="submit"] {
+  background-color: #ff2750;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.popup-container button[type="submit"]:hover {
+  background-color: #ff2750;
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

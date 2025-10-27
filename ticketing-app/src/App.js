@@ -8,6 +8,7 @@ import MyTickets from "./Sections/MyTickets";
 import SignUp from "./Components/SignUp";
 import Login from "./Components/Login";
 import About from "./Sections/About";
+import CallbackRequest from "./Components/CallbackRequest"; 
 import "./App.css";
 
 function App() {
@@ -24,15 +25,11 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<div>Contact Page</div>} />
           <Route path="/signup" element={<SignUp />} />
-
           <Route
             path="/login"
             element={<Login setLoggedInUser={setLoggedInUser} />}
           />
-
-         
           <Route path="/cart" element={<Cart loggedInUser={loggedInUser} />} />
-
           <Route
             path="/my-tickets"
             element={
@@ -47,6 +44,9 @@ function App() {
           />
         </Routes>
       </div>
+
+     
+      <CallbackRequest />
     </Router>
   );
 }
