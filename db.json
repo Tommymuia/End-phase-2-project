@@ -350,6 +350,20 @@
       "lastName": "Kiiru",
       "email": "ronnie@gmail.com",
       "password": "ronnie"
+    },
+    {
+      "id": "e473",
+      "firstName": "sarofene",
+      "lastName": "mbithi",
+      "email": "mutheumbithi4@gmail.com",
+      "password": "mutheu"
+    },
+    {
+      "id": "e7bc",
+      "firstName": "Jabir",
+      "lastName": "Jabir",
+      "email": "jabir@gmail.com",
+      "password": "jabir"
     }
   ],
   "cart": [],
@@ -503,6 +517,26 @@
       "ticketCount": 1,
       "totalPrice": 3500,
       "customerEmail": "ronnie@gmail.com"
+    },
+    {
+      "id": "3a98",
+      "eventId": "2",
+      "title": "Tech Innovators Summit",
+      "firstName": "      sarofene",
+      "lastName": "      mbithi",
+      "ticketCount": 1,
+      "totalPrice": 1200,
+      "customerEmail": "mutheumbithi4@gmail.com"
+    },
+    {
+      "id": "85e5",
+      "eventId": "1",
+      "title": "AfroBeats Music Festival",
+      "firstName": "jabir",
+      "lastName": "jabir",
+      "ticketCount": 2,
+      "totalPrice": 7000,
+      "customerEmail": "jabir@gmail.com"
     }
   ]
 }
