@@ -8,8 +8,8 @@ function ExploreEvents() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedEvent, setSelectedEvent] = useState(null);
-  const API_URL = "http://localhost:3001/events";
-  const CART_URL = "http://localhost:3001/cart";
+  const API_URL = "https://json-server-vercel-five-flax.vercel.app/events";
+  const CART_URL = "https://json-server-vercel-five-flax.vercel.app/cart";
 
   useEffect(() => {
     fetch(API_URL)

@@ -14,7 +14,7 @@ function MyTickets({ customerEmail }) {
 
     console.log("Fetching tickets for:", customerEmail);
 
-    fetch(`http://localhost:3001/purchases?customerEmail=${customerEmail}`)
+    fetch(`https://json-server-vercel-five-flax.vercel.app/purchases?customerEmail=${customerEmail}`)
       .then((res) => res.json())
       .then((data) => {
         console.log("Fetched data:", data);

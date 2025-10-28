@@ -28,7 +28,7 @@ function CallbackRequest() {
     e.preventDefault();
 
     try {
-      await fetch("http://localhost:3001/callbackRequest", {
+      await fetch("https://json-server-vercel-five-flax.vercel.app/callbackRequest", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
