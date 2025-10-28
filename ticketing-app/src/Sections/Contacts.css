@@ -8,3 +8,8 @@
   font-size: 32px;
   margin-bottom: 10px;
 }
+.contacts-container p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #333;
+}
