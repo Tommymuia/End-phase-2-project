@@ -4,3 +4,7 @@
   padding: 0 20px;
   font-family: sans-serif;
 }
+.contacts-container h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
