@@ -316,8 +316,14 @@
       "lastName": "Muia",
       "email": "muiathomas.mt@gmail.com",
       "password": "ggsgb"
+    },
+    {
+      "id": "6edf",
+      "firstName": "tete",
+      "lastName": "ssss",
+      "email": "hhh@gmail.com",
+      "password": "shsgs"
     }
-  
   ],
   "cart": [],
   "purchases": [
