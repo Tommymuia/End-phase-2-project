@@ -1,7 +1,7 @@
 # Tickify - Event Ticketing Platform
 
 ## Overview
-Tickify is a modern, responsive single-page React application that allows users to **discover, book, and manage tickets** for various events, including concerts, conferences, workshops, and local meetups. The platform provides a seamless and user-friendly interface for browsing events, adding tickets to a cart, checking out, and viewing purchased tickets.
+Tickify is a modern, responsive single-page React application that allows users to **discover, book and manage tickets** for various events, including concerts, conferences, workshops, and local meetups. The platform provides a seamless and user-friendly interface for browsing events, adding tickets to a cart, checking out and viewing purchased tickets.
 
 ## Features
 
@@ -14,7 +14,8 @@ Tickify is a modern, responsive single-page React application that allows users 
 - **Authentication:**
   - **Sign Up:** Create a new account.
   - **Login:** Authenticate existing users.
-- **Responsive Design:** Optimized for mobile, tablet, and
+- **Responsive Design:** Optimized for mobile, tablet and desktop scree.
+- 
 
 
 
