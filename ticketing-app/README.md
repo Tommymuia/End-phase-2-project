@@ -26,3 +26,12 @@ Engaging Home Page: The main landing page is designed for maximum engagement, fe
 
 Responsive Design: The entire application is optimized to deliver a consistent and high-quality experience across all devices like the mobile, tablet and desktop screens.
 
+Authentication
+
+The platform provides standard, secure pathways for user access:
+
+Sign Up: Simple process for new users to create a dedicated Tickify account.
+
+Login: Quick authentication method for existing users to sign in and access their purchases and profile.
+
+
