@@ -14,8 +14,7 @@ Tickify is a modern, responsive single-page React application that allows users 
 - **Authentication:**
   - **Sign Up:** Create a new account.
   - **Login:** Authenticate existing users.
-- **Responsive Design:** Optimized for mobile, tablet and desktop scree.
-- 
+- **Responsive Design:** Optimized for mobile, tablet and desktop screens.
 
 
 
