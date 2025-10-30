@@ -20,3 +20,9 @@ Secure Checkout: A streamlined process to securely purchase tickets and immediat
 
 My Tickets: A dedicated user dashboard to view all purchased tickets in one consolidated, accessible place.
 
+User Experience & Accessibility
+
+Engaging Home Page: The main landing page is designed for maximum engagement, featuring a clear, immediate Call-to-Action encouraging exploration.
+
+Responsive Design: The entire application is optimized to deliver a consistent and high-quality experience across all devices like the mobile, tablet and desktop screens.
+
