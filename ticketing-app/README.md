@@ -34,4 +34,13 @@ Sign Up: Simple process for new users to create a dedicated Tickify account.
 
 Login: Quick authentication method for existing users to sign in and access their purchases and profile.
 
+Technical Foundation
+
+This application is built as a single, consolidated React component to ensure maximum portability and ease of demonstration within simple development environments.
+
+Framework: React Functional Components and Hooks
+
+Styling: Tailwind CSS this ensures a utility-first, fully responsive design.
+
+Structure: Single-Page Application (SPA) architecture driven by internal state.
 
