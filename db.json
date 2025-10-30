@@ -316,63 +316,8 @@
       "lastName": "Muia",
       "email": "muiathomas.mt@gmail.com",
       "password": "ggsgb"
-    },
-    {
-      "id": "1834",
-      "firstName": "Thomas",
-      "lastName": "Muia",
-      "email": "muiathomas.mt@gmail.com",
-      "password": "rtv"
-    },
-    {
-      "id": "732c",
-      "firstName": "yVONNE",
-      "lastName": "kADENYI",
-      "email": "muiathomas.mt@gmail.com",
-      "password": "ERTY"
-    },
-    {
-      "id": "2e2b",
-      "firstName": "Mark",
-      "lastName": "Joe",
-      "email": "markJoe@gmail.com",
-      "password": "TOM"
-    },
-    {
-      "id": "25d3",
-      "firstName": "Test",
-      "lastName": "User",
-      "email": "est@gmail.com",
-      "password": "tom"
-    },
-    {
-      "id": "8fd5",
-      "firstName": "Sheila",
-      "lastName": "Awuor",
-      "email": "sheila@gmail.com",
-      "password": "Sheila"
-    },
-    {
-      "id": "bcd0",
-      "firstName": "Ronnie",
-      "lastName": "Kiiru",
-      "email": "ronnie@gmail.com",
-      "password": "ronnie"
-    },
-    {
-      "id": "e473",
-      "firstName": "sarofene",
-      "lastName": "mbithi",
-      "email": "mutheumbithi4@gmail.com",
-      "password": "mutheu"
-    },
-    {
-      "id": "e7bc",
-      "firstName": "Jabir",
-      "lastName": "Jabir",
-      "email": "jabir@gmail.com",
-      "password": "jabir"
     }
+  
   ],
   "cart": [],
   "purchases": [
